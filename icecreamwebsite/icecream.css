@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, minmax(100px, auto));
+    grid-template-areas:
+    "header"
+    "aside"
+    "section1"
+    "section2"
+    "footer";
+}
+
+header, .sec-1, .sec-2, .foot {
+    color: white;
+}
+
+header {
+    grid-area: header;
+    background-color: red;
+}
+
+aside {
+    grid-area: aside;
+    background-color: forestgreen;
+}
+
+.sec-1 {
+    grid-area: section1;
+    background-color: purple;
+}
+
+.sec-2 {
+    grid-area: section2;
+    background-color: lightseagreen;
+}
+
+.foot {
+    grid-area: footer;
+    background-color: darkgoldenrod;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, minmax(100px, auto));
+        grid-template-areas:
+        "header header"
+        "section1 aside"
+        "section2 aside"
+        "footer footer";
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-area: header;
+        background-color: red;
+    }
+    
+    aside {
+        grid-area: aside;
+        background-color: forestgreen;
+    }
+    
+    .sec-1 {
+        grid-area: section1;
+        background-color: purple;
+    }
+    
+    .sec-2 {
+        grid-area: section2;
+        background-color: lightseagreen;
+    }
+    
+    .foot {
+        grid-area: footer;
+        background-color: darkgoldenrod;
+    }
+}
