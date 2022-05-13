@@ -4,11 +4,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: white;
     min-height: 100vh;
     display: grid;
+    row-gap: 0.5rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, minmax(100px, auto));
+    grid-template-rows: repeat(5, minmax(auto, auto));
     grid-template-areas:
     "header"
     "aside"
@@ -23,7 +24,6 @@ header, .sec-1, .sec-2, .foot {
 
 header {
     grid-area: header;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,8 +47,10 @@ h1 {
 .nav li a {
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 1.05rem;
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2rem;
 }
 
 .nav li a:hover {
@@ -59,7 +61,7 @@ h1 {
 }
 
 .nav li {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .social-links {
@@ -81,9 +83,48 @@ h1 {
 
 aside {
     grid-area: aside;
-    background-color: forestgreen;
+    background-color:burlywood;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
 }
 
+aside h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+aside h2 + p {
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+aside .aside-text {
+    text-align: center;
+}
+
+.menu-btn {
+    border: 2px solid black;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1.4rem;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu-btn:hover {
+    background-color: white;
+}
+.menu-btn:active {
+    background-color: gray;
+    color: black;
+}
+
+.aside-img img {
+    width: 35rem;
+    max-width: 100%;
+    min-height: auto;
+    display: block;
+}
 .sec-1 {
     grid-area: section1;
     background-color: purple;
