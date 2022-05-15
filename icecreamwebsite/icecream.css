@@ -28,8 +28,9 @@ header {
     flex-direction: column;
     align-items: center;
     background-image: url("images/izecream.jpg");
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -204,6 +205,10 @@ aside .aside-text {
         grid-template-rows: minmax(10rem, auto);
         grid-area: header;
         background-color: red;
+        background-image: url("images/izecream.jpg");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
         /* display: flex;
         justify-content: space-between; */
     }
