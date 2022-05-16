@@ -12,7 +12,6 @@ body {
     background-color: white;
     min-height: 100vh;
     display: grid;
-    row-gap: 0.25rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, minmax(auto, auto));
     grid-template-areas:
@@ -280,6 +279,8 @@ aside .aside-text {
     }
 
     header {
+        position: fixed;
+        z-index: 3;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: minmax(10rem, auto);
