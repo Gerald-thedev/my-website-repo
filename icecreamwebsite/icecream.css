@@ -7,7 +7,7 @@ body {
     background-color: white;
     min-height: 100vh;
     display: grid;
-    row-gap: 0.5rem;
+    row-gap: 0.25rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, minmax(auto, auto));
     grid-template-areas:
@@ -65,6 +65,11 @@ h1 {
     margin-bottom: 1rem;
 }
 
+.order-btn {
+    margin-bottom: 2.5rem!important;
+    font-size: 1.1rem;
+}
+
 .social-links {
     display: flex;
     flex-direction: row;
@@ -104,18 +109,19 @@ aside .aside-text {
     text-align: center;
 }
 
-.menu-btn {
+.btn {
     border: 2px solid black;
     padding: 0.5rem 1.5rem;
     margin-bottom: 1.4rem;
     font-weight: bold;
+    color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.menu-btn:hover {
+.btn:hover {
     background-color: white;
 }
-.menu-btn:active {
+.btn:active {
     background-color: gray;
     color: black;
 }
@@ -131,12 +137,9 @@ aside .aside-text {
     background-color: purple;
     text-align: center;
     color: black;
-    background-image: url("images/icekream.jpg");
+    background-image: url("images/icecream1.jpg");
     background-position: center center;
     background-size: cover;
-    /* display: flex;
-    align-items: center;
-    flex-direction: row; */
 }
 
 .dessert {
@@ -152,7 +155,9 @@ aside .aside-text {
 }
 
 .dessert+p {
-    color: tomato;
+    color: black;
+    margin-top: -0.6rem;
+    letter-spacing: 0.2rem;
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -165,10 +170,9 @@ aside .aside-text {
     display: block;
 }
 
-.sec1-btn {
+.btn {
     border: 2px solid black;
     padding: 0.5rem 1.5rem;
-    /* margin-bottom: 1.8rem; */
     margin: 0.4rem auto;
     font-weight: bold;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -179,6 +183,24 @@ aside .aside-text {
 .sec-2 {
     grid-area: section2;
     background-color: lightseagreen;
+}
+
+.sec-2 h2 {
+    text-align: center;
+}
+
+.sec-2 h2 ~ p {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.95rem;
+}
+
+.sec-2 div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 20rem;
 }
 
 .foot {
