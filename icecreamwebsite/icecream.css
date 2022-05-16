@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -67,7 +72,7 @@ h1 {
 
 .order-btn {
     margin-bottom: 2.5rem!important;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .social-links {
@@ -107,6 +112,9 @@ aside h2 + p {
 
 aside .aside-text {
     text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.4rem;
 }
 
 .btn {
@@ -151,7 +159,7 @@ aside .aside-text {
     font-size: 0.95rem;
     padding-left: 0.4rem;
     padding-right: 0.4rem;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
 }
 
 .dessert+p {
@@ -168,6 +176,11 @@ aside .aside-text {
     height: auto;
     width: 35rem;
     display: block;
+}
+
+.sec1-btn a {
+    text-decoration: none;
+    color: black;
 }
 
 .btn {
@@ -187,26 +200,71 @@ aside .aside-text {
 
 .sec-2 h2 {
     text-align: center;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .sec-2 h2 ~ p {
     text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
     font-size: 0.95rem;
+    margin-top: -0.5rem;
+}
+
+.sec-2 p > em {
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+    top: 0.5rem;
+}
+
+#about + p {
+    line-height: 1.4rem;
 }
 
 .sec-2 div img {
     max-width: 100%;
     height: auto;
     display: block;
-    width: 20rem;
+    width: 40rem;
 }
 
 .foot {
     grid-area: footer;
     text-align: center;
-    background-color: darkgoldenrod;
+    background-color:burlywood;
+    color: black;
+    padding-bottom: 2rem;
+}
+
+.foot h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.addy + p {
+    margin-top: -0.8rem;
+}
+
+#contact {
+    position: relative;
+    top: 0.8rem;
+}
+
+.hours {
+    position: relative;
+    top: 0.6rem;
+}
+
+.mail-list {
+    position: relative;
+    top: 0.6rem;
+}
+
+.sub {
+    position: relative;
+    top: 0.6rem;
 }
 
 @media screen and (min-width: 768px) {
